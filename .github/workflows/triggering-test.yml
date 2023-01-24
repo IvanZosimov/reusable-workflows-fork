@@ -13,7 +13,7 @@ jobs:
          -H "Accept: application/vnd.github+json" \
          -H "Authorization: ${{ secrets.PAT }}"\
          -H "X-GitHub-Api-Version: 2022-11-28" \
-         https://api.github.com/repos/IvanZosimov/TestRepo/dispatches \
+         https://api.github.com/repos/IvanZosimov/testrepo/dispatches \
          -d '{"event_type":"test","client_payload":{"unit":false,"integration":true}}'
       env:
          PAT: ${{ secrets.PAT }}
