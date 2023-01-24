@@ -1,8 +1,10 @@
 name: Test triggring workflow
 on:
    push:
+      branches:
+         - 'main'
       paths:
-         - "./{.eslintrc,.prettierrc}.json"
+         - ".eslintrc.json"
    workflow_dispatch:
     
     
