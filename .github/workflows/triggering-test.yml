@@ -8,6 +8,7 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
     - run: |
+         curl --version
          curl \
          -X POST \
          -H "Accept: application/vnd.github+json" \
